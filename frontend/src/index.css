@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, 'Segoe UI', sans-serif;
+  background-color: #080d18;
+  color: #e2e8f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(96, 165, 250, 0.14), transparent 26%),
+    #080d18;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: #0b1220;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+:root[data-theme='light'] body {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+:root[data-theme='light'] main,
+:root[data-theme='light'] header,
+:root[data-theme='light'] aside {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+:root[data-theme='light'] [class*='bg-[#111827]'],
+:root[data-theme='light'] [class*='bg-slate-900'],
+:root[data-theme='light'] [class*='bg-slate-950'] {
+  background-color: #fff !important;
+}
+
+:root[data-theme='light'] .text-white,
+:root[data-theme='light'] .text-slate-100,
+:root[data-theme='light'] .text-slate-200 {
+  color: #0f172a !important;
+}
+
+:root[data-theme='light'] .text-slate-300,
+:root[data-theme='light'] .text-slate-400 {
+  color: #475569 !important;
+}
+
+:root[data-compact='true'] table th,
+:root[data-compact='true'] table td {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
